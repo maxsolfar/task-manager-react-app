@@ -1,0 +1,65 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@300;400;500&display=swap');
+
+:root{
+	/* COLORS VARIABLES */
+	/* --main-color:#FED32C; */
+	--main-color:#beed40;
+	--secondary-color:#3f3da6;
+	--accent-color:#ec2f76;
+  --dark-color: #212121;
+  --clear-color: #f2f2f2;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+	box-sizing: border-box;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, em, img, strong, b, u, i, ol, ul, li, form, label, tr, th, td,
+article, aside, figure, figcaption, footer, header, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+	background-color: var(--main-color);
+}
+
+*::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+*::-webkit-scrollbar:vertical {
+  width:15px;
+}
+
+*::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+} 
+
+*::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(21, 21, 21, .5);
+}

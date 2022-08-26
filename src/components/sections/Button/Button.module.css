@@ -1,0 +1,97 @@
+.Full{
+  width: 100%;
+}
+
+.SemiFull{
+  width: 80%;
+}
+
+.Medium{
+  width: 60%;
+}
+
+.Small{
+  width: 30%;
+}
+
+.Button{
+  width: 100%;
+  font-weight: 700;
+  border-radius: 20px;
+  border-style: none;
+
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.ButtonIcon{
+  width: 32px;
+}
+
+.PrimaryButton{
+  background-color: var(--primary-color);
+  color: var(--dark-color);
+  transition: .9s ease-in-out;
+}
+
+.SecondaryButton{
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  color: var(--clear-color);
+  transition: .9s ease-in-out;
+}
+
+.DarkButton{
+  background-color: var(--dark-color);
+  border: 2px solid var(--dark-color);
+  color: var(--clear-color);
+  transition: .9s ease-in-out;
+}
+
+.AccentButton{
+  background-color: var(--accent-color);
+  color: var(--clear-color);
+  transition: .9s ease-in-out;
+}
+
+.PrimaryButton:hover,.SecondaryButton:hover, .AccentButton:hover, .DarkButton:hover{
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+.DarkButton:hover{
+  background-color: var(--clear-color);
+  color: var(--dark-color);
+}
+
+.PrimaryButton:hover{
+  background-color: var(--clear-color);
+}
+
+.SecondaryButton:hover{
+  color: var(--secondary-color);
+  background-color: var(--clear-color);
+}
+
+.AccentButton:hover{
+  background-color: var(--primary-color);
+}
+
+.SmallButton{
+  font-size: 1.2rem;
+  padding: 2px;
+}
+
+.MidButton{
+  font-size: 1.4rem;
+  padding: 8px;
+}
+
+.LargeButton{
+  font-size: 1.6rem;
+  padding: 12px;
+}
+

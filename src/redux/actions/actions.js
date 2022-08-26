@@ -36,6 +36,21 @@ function login(info) {
   };
 }
 
+function signUp(data) {
+  return async function (dispatch) {
+    try {
+      const newUser = await axios.post("https://task-manager-api-rest.herokuapp.com/api/v1/auth/register", data);
+      return dispatch({
+        type: REGISTER,
+        payload: newUser,
+      });
+        
+    } catch (error) {
+      console.log(`Register Error: ${error}`);
+    }
+  };
+}
+
 
 function getAllProjects() {
   return async function (dispatch) {
@@ -55,5 +70,6 @@ function getAllProjects() {
 
 export { 
   getAllProjects,
-  login
+  login,
+  signUp,
 };

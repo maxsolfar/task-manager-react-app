@@ -1,0 +1,173 @@
+/* Styles for Main Container and Input Container*/
+.Container,
+.InputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+.Container {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.InputContainer {
+  position: relative;
+}
+
+/* Styles for Label */
+.InputLabel {
+  font-size: 1.4rem;
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+/* Styles for Input */
+.InputField{
+  width: 100%;
+  padding: 10px 10px 10px 40px;
+  border-radius: 8px;
+  border-style: none;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transition: 0.9s ease-in-out;
+}
+
+.InputDark {
+  width: 100%;
+  padding: 8px 8px 8px 40px;
+  border-style: none;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 1.4rem;
+  transition: 0.9s ease-in-out;
+  background-color: transparent;
+}
+
+.InputField{
+  border: 2px solid var(--font-dark-color);
+  color: var(--font-dark-color);
+}
+
+.InputDark {
+  color: var(--dark-color);
+  border-bottom: 2px solid var(--dark-color);
+}
+
+.InputField::placeholder {
+  font-weight: 400;
+  color: #d9d9d9;
+}
+
+.InputDark::placeholder {
+  font-weight: 400;
+  color: rgba(21, 21, 21, .3);
+}
+
+.InputDark:focus{
+  transition: 0.5s ease-in-out;
+  outline: none;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+/* .InputField:focus {
+  transition: 0.5s ease-in-out;
+  border: 2px solid var(--secondary-color);
+  outline: none;
+} */
+
+
+/* Styles for Icon img */
+.IconInputField {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  right: 0;
+  bottom: 0;
+  width: 22px;
+  opacity: .7;
+}
+
+/* Styles for Error span */
+.ErrorInputField {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+  margin-top: -3px;
+}
+
+/* Media queries for mid-size devices (Tablet) */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles for Input */
+  .InputField,
+  .InputDark {
+    padding: 11px 11px 11px 50px;
+    font-size: 1.5rem;
+  }
+
+  /* Styles for Icon img */
+  .IconInputField {
+    top: 12px;
+    left: 14px;
+    right: 0;
+    bottom: 0;
+    width: 26px;
+  }
+
+  /* Styles for Label */
+  .InputLabel {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media queries for large-size devices (Laptop & Desktop) */
+@media screen and (min-device-width: 1200px) {
+  /* Styles for Input */
+  .InputField,
+  .InputDark {
+    padding: 10px 10px 10px 50px;
+    font-size: 1.5rem;
+  }
+
+  /* Styles for Icon img */
+  .IconInputField {
+    top: 10px;
+    left: 14px;
+    right: 0;
+    bottom: 0;
+    width: 26px;
+  }
+
+  /* Styles for Label */
+  .InputLabel {
+    font-size: 1.5rem;
+  }
+}
+
+
+/* Media queries for large-size devices (Laptop & Desktop) */
+@media screen
+and (min-device-width: 1600px) {
+  .InputField,
+  .InputDark {
+    padding: 12px 12px 12px 50px;
+    font-size: 1.6rem;
+  }
+
+  /* Styles for Icon img */
+  .IconInputField {
+    top: 12px;
+    left: 14px;
+    right: 0;
+    bottom: 0;
+    width: 28px;
+  }
+
+  /* Styles for Label */
+  .InputLabel {
+    font-size: 1.6rem;
+  }
+}
